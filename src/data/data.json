@@ -16,16 +16,16 @@
     {
       "title": "Hunched",
       "link": "https://www.hunchedapp.com/",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "smallImage": "img/portfolio/hunched.png"
     },
     {
       "title": "HaulComm",
       "link": "https://main.d3ot3ozq04076g.amplifyapp.com/",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "smallImage": "img/portfolio/haulcomm.png"
     },
     {
       "title": "American Caging, Inc",
-      "smallImage": "img/portfolio/03-small.jpg",
+      "smallImage": "img/portfolio/american-caging.png",
       "inProgress": true
     }
   ],
