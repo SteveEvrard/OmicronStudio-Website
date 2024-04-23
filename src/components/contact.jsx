@@ -7,8 +7,10 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [emailBtnText, setEmailBtnText] = useState("Send Message")
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +22,7 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
+    setEmailBtnText("Sending...")
         
     emailjs
       .sendForm("service_awmgttj", "template_zpqudoq", e.target, "MPiRpLGuEpqCyhsrb")
@@ -27,9 +30,13 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text);
           clearState();
+          setEmailBtnText("Send Message");
+          alert("Request sent successfully! Talk to you soon!");
         },
         (error) => {
           console.log(error.text);
+          setEmailBtnText("Send Message");
+          alert("Failed to submit request. Please try again.");
         }
       );
   };
@@ -54,6 +61,7 @@ export const Contact = (props) => {
                         type="text"
                         id="name"
                         name="name"
+                        value={name}
                         className="form-control"
                         placeholder="Name"
                         required
@@ -68,6 +76,7 @@ export const Contact = (props) => {
                         type="email"
                         id="email"
                         name="email"
+                        value={email}
                         className="form-control"
                         placeholder="Email"
                         required
@@ -81,6 +90,7 @@ export const Contact = (props) => {
                   <textarea
                     name="message"
                     id="message"
+                    value={message}
                     className="form-control"
                     rows="4"
                     placeholder="Message"
@@ -91,7 +101,7 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  { emailBtnText }
                 </button>
               </form>
             </div>
