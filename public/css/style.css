@@ -255,7 +255,7 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -302,12 +302,12 @@ header .intro-text {
 
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 #about h3 {
   font-size: 22px;
-  margin: 0 0 20px;
+  margin: 20px 0;
 }
 
 #about h2 {
@@ -343,7 +343,7 @@ header .intro-text {
 }
 
 #about img {
-  width: 520px;
+  width: 100%;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
@@ -700,8 +700,19 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
+.seeunseen-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+
+  .seeunseen-description {
+    width: 102%;
+    justify-content: center;
   }
 }
