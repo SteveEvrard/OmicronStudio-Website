@@ -10,7 +10,7 @@ const initialState = {
 
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
-  const [emailBtnText, setEmailBtnText] = useState("Get Demo")
+  const [emailBtnText, setEmailBtnText] = useState("Send Message")
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,7 +47,7 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get a Demo</h2>
+                <h2>Get In Touch</h2>
                 <p>
                   Please fill out the form below to send us an email and we will
                   get back to you as soon as possible.
@@ -86,7 +86,7 @@ export const Contact = (props) => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="form-group">
+                <div className="form-group">
                   <textarea
                     name="message"
                     id="message"
@@ -98,7 +98,7 @@ export const Contact = (props) => {
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
-                </div> */}
+                </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   { emailBtnText }

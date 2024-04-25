@@ -1,23 +1,15 @@
 {
   "Header": {
-    "title": "Gallagher & Voxel",
-    "paragraph": "Gallagher and Voxel have partnered to bring you a site intelligence platform with 24/7 risk monitoring that drives real-time insights into safety risks & near misses."
+    "title": "Omicron Studio",
+    "paragraph": ""
   },
-  "SeeUnseen": {
-    "paragraph": "",
+  "About": {
+    "paragraph": "At Omicron Studio, we bring technology to life. Our passion is solving complex problems with bespoke web and mobile applications that push the boundaries of innovation. From posture-detecting sensors to real-time haulage tracking systems and patient-clinical trial matching services, we specialize in turning challenging client requirements into seamless, functional realities. Founded by a team of dedicated tech enthusiasts, we believe in creating solutions that not only meet but exceed our clients' visions.",
     "Why": [
       "Client-Centered Innovation",
       "Cutting-Edge Solutions",
       "Proven Expertise",
       "Transparent Collaboration"
-    ]
-  },
-  "MeasureAndManage": {
-    "paragraph": "",
-    "Why": [
-      "Safety Scoring",
-      "Trend Reports",
-      "Highlighted Incidents"
     ]
   },
   "Gallery": [
