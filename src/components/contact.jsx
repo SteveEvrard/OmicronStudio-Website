@@ -132,6 +132,15 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : "loading"}
               </p>
             </div>
+            <div className="contact-item">
+              <a href="https://docs.google.com/document/d/17GUuIeSGIkEmiMqo-cdfDkjs3E9cC4tX5igci2dWtxI/edit" title="Privacy Policy" target="_blank" rel="noreferrer">
+                <p>
+                  <span>
+                    <i className="fa fa-shield-halved"></i> Privacy Policy
+                  </span>{" "}
+                </p>
+              </a>
+            </div>
           </div>
           {/* <div className="col-md-12">
             <div className="row">
